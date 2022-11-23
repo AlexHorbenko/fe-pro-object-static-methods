@@ -4,7 +4,14 @@
  * @param {Object} object
  * @returns {string[]}
  */
-export const keys = (object) => {};
+export const keys = (object) => {
+    const arraykey = [];
+    for (let key of Object.keys(object)) {
+        // console.log(key);
+        arraykey.push(key);
+    }
+    return arraykey
+};
 
 /**
  * Принимает объект, возвращает массив значений объекта. Также без использования
