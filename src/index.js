@@ -5,12 +5,12 @@
  * @returns {string[]}
  */
 export const keys = (object) => {
-    const arraykey = [];
+    const arrayKey = [];
     for (let key of Object.keys(object)) {
         // console.log(key);
-        arraykey.push(key);
-    }
-    return arraykey
+        arrayKey.push(key);
+    };
+    return arrayKey;
 };
 
 /**
@@ -19,7 +19,13 @@ export const keys = (object) => {
  * @param {Object} object
  * @returns {any[]}
  */
-export const values = (object) => {};
+export const values = (object) => {
+    const arrayValue = [];
+    for (let value of Object.values(object)) {
+        arrayValue.push(value);
+    };
+    return arrayValue;
+};
 
 /**
  * Принимаем объект, возвращаем энтри. Все также без методов, используем цикл
