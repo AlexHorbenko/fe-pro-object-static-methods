@@ -32,7 +32,13 @@ export const values = (object) => {
  * @param {Object} object
  * @returns {[string, any][]}
  */
-export const entries = (object) => {};
+export const entries = (object) => {
+    const arrayEntrie = [];
+    for (let entrie of Object.entries(object)) {
+        arrayEntrie.push(entrie);
+    };
+    return arrayEntrie;
+};
 
 /**
  * Тут наоборот, мы должны сделать из энтри объект обратно) Можете погуглить
@@ -40,4 +46,7 @@ export const entries = (object) => {};
  * @param {[string, any][]} entries
  * @returns {Object}
  */
-export const fromEntries = (entries) => {};
+export const fromEntries = (entries) => {
+    const Obj = {};
+    
+};
