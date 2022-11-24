@@ -48,5 +48,6 @@ export const entries = (object) => {
  */
 export const fromEntries = (entries) => {
     const newObj = Object.fromEntries(entries);
-        console.log(newObj);
+    console.log(newObj);
+    return newObj
 };
