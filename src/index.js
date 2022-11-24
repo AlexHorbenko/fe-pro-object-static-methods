@@ -47,6 +47,6 @@ export const entries = (object) => {
  * @returns {Object}
  */
 export const fromEntries = (entries) => {
-    const Obj = {};
-    
+    const newObj = Object.fromEntries(entries);
+        console.log(newObj);
 };
